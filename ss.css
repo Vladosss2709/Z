@@ -1,0 +1,104 @@
+.big{
+    display: grid;
+    grid-template-columns: repeat(3,200px);
+    grid-template-rows: repeat(3,200px);
+    grid-template-areas:
+    "head1 head1 head1"
+    "new1 new2 new3"
+    "img1 t1 t1"
+}
+
+.a1{
+    border: 1px solid black;
+    grid-area: head1;
+}
+.a2{
+    border: 1px solid black;
+    grid-area: new1;
+}
+.a3{
+    border: 1px solid black;
+    grid-area: new2;
+}
+.a4{
+    border: 1px solid black;
+    grid-area: new3;
+}
+.a5{
+    border: 1px solid black;
+    grid-area: img1;
+}
+.a6{
+    border: 1px solid black;
+    grid-area: t1;
+}
+
+.big1{
+    display: grid;
+    grid-template-columns: repeat(3,200px);
+    grid-template-rows: repeat(3,200px);
+    grid-template-areas:
+    "red1 blue1 blue1"
+    "red1 white1 yellow1"
+    "green1 green1 yellow1"
+}
+
+.a11{
+    border: 1px solid black;
+    grid-area: red1;
+    background-color: red;
+}
+.a11:hover ~.a31{
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,0,0,1) 100%);
+
+}
+
+
+.a21{
+    border: 1px solid black;
+    grid-area: blue1;
+    background-color: blue;
+}
+.a21:hover ~.a31{
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%,  rgb(17, 0, 255) 100%);
+
+}
+
+
+
+
+
+
+.a41{
+    border: 1px solid black;
+    grid-area: yellow1;
+    background-color: yellow;
+}
+.a41:hover ~.a31{
+    background: rgb(255,255,255);
+    background: linear-gradient(450deg, rgba(255,255,255,1) 0%, rgb(255, 251, 0) 100%);
+
+}
+
+
+
+
+.a51{
+    border: 1px solid black;
+    grid-area: green1;
+    background-color: green;
+}
+.a51:hover ~.a31{
+    background: rgb(255,255,255);
+    background: linear-gradient(900deg, rgba(255,255,255,1) 0%,  rgb(51, 255, 0) 100%);
+
+}
+
+.a31{
+    border: 1px solid black;
+    grid-area: white1;
+    background-color: white;
+}
+
